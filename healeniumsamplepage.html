@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locate Web Elements Using Cypress GET and CONTAINS commands</title>
+    <style>
+        body {
+            background-color: sienna;
+        }
+
+        div,
+        fieldset {
+            border: 2px solid darkorange;
+            margin: 10px;
+            padding: 20px;
+            background-color: thistle;
+        }
+
+        div#container {
+            border: 5px solid coral;
+            margin: 20px;
+            padding: 20px;
+            background-color: seashell;
+        }
+
+        ul {
+            direction: rtl;
+        }
+
+        h1,
+        a#channel {
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: maroon;
+            text-decoration: none;
+            font-size: xx-large;
+            font-weight: bolder;
+            letter-spacing: 5px;
+        }
+
+        span,
+        label,
+        a {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            letter-spacing: 1px;
+        }
+
+        legend {
+            color: maroon;
+            letter-spacing: 1.5px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        button,
+        input[type=submit] {
+            /* lavenderblush */
+            background-color: lavenderblush;
+            border-radius: 5px;
+            border-width: 2px;
+            /* white */
+            color: black;
+            margin-right: 10px;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- role="main" -->
+    <div id="container" role="main">
+        <h1><a id="channel" href="https://www.youtube.com/c/qaboxletstest/playlists">QA BOX LET'S TEST</a></h1>
+        <ul>
+            <li><a href="https://youtu.be/7iZwZ1xhnVw" target="_blank">CSS SELECTORS</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLMZdod-kiMhL-b0OqCEt4Ld6faDtOVeGZ"
+                    target="_blank">JQUERY FOR
+                    CYPRESS</a></li>
+            <li><a href="https://youtube.com/playlist?list=PLMZdod-kiMhLl5y1G14nzXk-PUEs4mmyx" target="_blank">MOCHA,
+                    CHAI, SINON & CHAI-JQUERY</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLMZdod-kiMhJnRl689MsoOzgbBpUGvSzz"
+                    target="_blank">XPATH</a>
+            </li>
+            <li><a href="https://youtube.com/playlist?list=PLMZdod-kiMhKBxYSWwp7uqHc7zJZbFnRf" target="_blank">NODEJS
+                    BASICS</a></li>
+            <li><a href="https://youtube.com/playlist?list=PLMZdod-kiMhK7q5R6W-owyNhxHUJ3pf1Y"
+                    target="_blank">JAVASCRIPT</a>
+            </li>
+        </ul>
+        <fieldset id="GETCOMMAND">
+            <legend>CYPRESS GET COMMAND</legend>
+            <fieldset>
+                <legend>SINGLE ELEMENT FOUND</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><label for="Channel">Name</label></td>
+                            <td><input type="text" name="Channel Name" placeholder="enter your channel name" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="date">Year Started</label></td>
+                            <td><input type="date" name="date" placeholder="enter the start year" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>MULTIPLE ELEMENTS FOUND - JQUERY DOM TRAVERSING METHODS</legend>
+                <fieldset>
+                    <legend>Set of Buttons</legend>
+                    <button onclick="alert('BUTTON ONE')">Button</button>
+                    <button onclick="alert('BUTTON TWO')">Button</button>
+                    <button onclick="alert('BUTTON THREE')">Button</button>
+                    <button onclick="alert('BUTTON FOUR')">Button</button>
+                    <button onclick="alert('BUTTON FIVE')">Button</button>
+                </fieldset>
+                <fieldset>
+                    <legend>What is Your Favorite Pet?</legend>
+                    <!-- c"
+                    aria-label="Dogs"
+                    aria-label="Birds"
+                    aria-label="Rabbits"
+                    aria-label="Horses" -->
+                    <input aria-label="Dogs" type="checkbox" name="favorite_pet" value="Cat">Cats<br>
+                    <input  aria-label="Dogs" type="checkbox" name="favorite_pet" value="Dogs">Dogs<br>
+                    <input  aria-label="Birds" type="checkbox" name="favorite_pet" value="Bir">Birds<br>
+                    <input  aria-label="Rabbits" type="checkbox" name="favorite_pet" value="Rabbits">Rabbits<br>
+                    <input  aria-label="Horses" type="checkbox" name="favorite_pet" value="Horses">Horses<br>
+                </fieldset>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>CYPRESS CONTAINS COMMAND</legend>
+            <fieldset>
+                <legend>FIND ELEMENT ON BASIS OF TEXT</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span onclick="alert('SPAN ONE CLICKED')">SPAN ONE</span></td>
+                        </tr>
+                        <tr>
+                            <td><span onclick="alert('SPAN TWO CLICKED')">SPAN TWO</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>FIND ELEMENT ON BASIS OF TEXT & ELEMENT SELECTOR</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span onclick="alert('FIND ME SPAN CLICKED')">FIND ME</span></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="alert('FIND ME BUTTON CLICKED')">FIND ME</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>FIND input[type='submit'] ELEMENT ON BASIS OF VALUE</legend>
+                <form onsubmit="return false;">
+                    <label for="submit">Submit the form</label>
+                    <input name="submit" type="submit" value="Submit the form" onclick="submitForm()" />
+                </form>
+            </fieldset>
+            <fieldset>
+                <legend>REGULAR EXPRESSION</legend>
+                <button onclick="addAgainButton()">Add Again</button>
+                <button onclick="addButton()">Add</button>
+            </fieldset>
+            <fieldset>
+                <legend>ELEMENT PREFERENCE ORDER</legend>
+                <button onclick="elementPreferenceOrder()">
+                    <i class="iClass"></i>
+                    <span>Search</span>
+                </button>
+            </fieldset>
+        </fieldset>
+        <fieldset id="myList">
+            <legend>OUTCOME : -</legend>
+        </fieldset>
+    </div>
+    <script>
+        function submitForm() {
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode("Submit - FIND input[type='submit'] ELEMENT ON BASIS OF VALUE");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("myList").appendChild(node);
+        }
+        function addButton() {
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode("REGULAR EXPRESSION - Add");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("myList").appendChild(node);
+        }
+        function addAgainButton() {
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode("REGULAR EXPRESSION - Add Again");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("myList").appendChild(node);
+        }
+        function elementPreferenceOrder() {
+            var node = document.createElement("LI");                 // Create a <li> node
+            var textnode = document.createTextNode("ELEMENT PREFERENCE ORDER - Search");         // Create a text node
+            node.appendChild(textnode);                              // Append the text to <li>
+            document.getElementById("myList").appendChild(node);
+        }
+    </script>
+</body>
+
+</html>
