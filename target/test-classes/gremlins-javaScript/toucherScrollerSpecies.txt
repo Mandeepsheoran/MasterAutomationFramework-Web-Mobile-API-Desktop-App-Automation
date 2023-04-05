@@ -1,0 +1,17 @@
+   javascript: (function() {
+    function callback() {
+        gremlins.createHorde({
+            species: [gremlins.species.toucher(),gremlins.species.scroller()],
+            mogwais: [gremlins.mogwais.alert(),gremlins.mogwais.fps(),gremlins.mogwais.gizmo()],
+            strategies: [gremlins.strategies.allTogether()]
+        }).unleash();
+    }
+    var s = document.createElement("script");
+    s.src = "https://unpkg.com/gremlins.js";
+    if (s.addEventListener) {
+        s.addEventListener("load", callback, false);
+    } else if (s.readyState) {
+        s.onreadystatechange = callback;
+    }
+    document.body.appendChild(s);
+    })()

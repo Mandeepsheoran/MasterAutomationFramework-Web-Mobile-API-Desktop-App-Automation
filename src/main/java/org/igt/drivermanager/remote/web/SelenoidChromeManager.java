@@ -1,5 +1,6 @@
 package org.igt.drivermanager.remote.web;
 
+import org.igt.configfactory.ConfigFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;

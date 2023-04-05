@@ -12,6 +12,16 @@
 	<test thread-count="1" name="Automation-Test-Suite">
 		<classes>
 		<class name="org.igt.aihealing.HealeniumWebTest" />
+		<class name="org.igt.webtest.BrowserAlertAuthorizationTest" />
+		<class name="org.igt.webtest.LoadInsecureWebsiteTest" />
+		<class name="org.igt.webtest.NetworkInterceptTest" />
+		<class name="org.igt.webtest.PrintToPDFTest" />
+		<class name="org.igt.webtest.ResponsiveModeTest" />
+		<class name="org.igt.webtest.ScreenRecorderTest" />
+		<class name="org.igt.webtest.SetBrowserGeoLocationTest" />
+		<class name="org.igt.webtest.TestInOfflineNetworkMode" />
+		<class name="org.igt.webtest.TestInSlowNetworkMode" />
+		<class name="org.igt.webtest.WebPageZoomTest" />
 			<!-->class name="org.igt.visualtest.PercyWebTest" />
 			<class name="org.igt.dashboardtest.ReportPortalWebTest" />
 			<class name="org.igt.websecurityscan.ZAPScanTest" />

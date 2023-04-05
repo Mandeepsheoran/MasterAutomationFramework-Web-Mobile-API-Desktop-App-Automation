@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "favfood": {
+      "type": "object",
+      "properties": {
+        "lunch": {
+          "type": "string"
+        },
+        "breakfast": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "dinner": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lunch",
+        "breakfast",
+        "dinner"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "firstname",
+    "lastname",
+    "age",
+    "email",
+    "favfood"
+  ]
+}

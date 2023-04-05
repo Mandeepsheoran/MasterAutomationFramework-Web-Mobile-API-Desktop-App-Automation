@@ -2,9 +2,6 @@ package org.igt.config;
 
 import java.net.URL;
 import org.aeonbits.owner.Config;
-import org.aeonbits.owner.Config.ConverterClass;
-import org.aeonbits.owner.Config.DefaultValue;
-import org.aeonbits.owner.Config.Key;
 import org.igt.converters.StringToURLConverter;
 
 /**

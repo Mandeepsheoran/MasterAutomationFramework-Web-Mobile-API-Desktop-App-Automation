@@ -2,7 +2,6 @@ package org.igt.monkeytesting;
 
 import static org.igt.enums.LogType.CONSOLEANDEXTENTINFO;
 import static org.igt.reports.FrameworkLogger.log;
-
 import java.util.logging.Level;
 import org.assertj.core.api.Assertions;
 import org.igt.annotations.FrameworkAnnotations;

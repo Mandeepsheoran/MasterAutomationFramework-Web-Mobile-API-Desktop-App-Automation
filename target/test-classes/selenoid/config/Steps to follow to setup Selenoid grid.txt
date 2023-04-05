@@ -1,0 +1,31 @@
+
+# Before following below steps, make sure these docker images are downloaded.
+
+a)	docker pull aerokube/selenoid:latest-release or docker pull aerokube/selenoid:latest
+b)	docker pull aerokube/selenoid-ui
+c)	docker pull selenoid/video-recorder
+d)	selenoid/vnc_chrome:110.0    (or whatever version you need)
+e)	docker pull selenoid/vnc_firefox 
+
+
+1. Create one "config" folder in resource or any other folder. Double check the folder name as Selenoid look for this name only i.e. "config".
+
+2. Create one json file "browsers.json" which will have docker image information for browsers. Selenoid look for the version and default version of dokcer image inside this "browser.json" only.
+
+3. Now from Windows Powershell move the the folder where "config" folder is present. e.g. selenoid folder in this project.
+
+4. RUn below command:
+
+$current = $PWD -replace "\\", "/" -replace "C", "c"
+
+5. Now run selenoid docker command which will map the volumer folders as well.
+
+docker run -d --name selenoidgrid -p 4444:4444 -v //var/run/docker.sock:/var/run/docker.sock -v ${current}/config/:/etc/selenoid/:ro -v ${current}/selenoid/video/:/opt/selenoid/video/ -e OVERRIDE_VIDEO_OUTPUT_DIR=${current}/selenoid/video/ aerokube/selenoid:latest
+
+We can check the running status of container.
+
+6. We can now launch the container for selenoid-ui as well to see the execution:
+
+docker run --rm -d --name selenoid-ui --link selenoidgrid -p 8090:8080 aerokube/selenoid-ui --selenoid-uri=http://selenoid:4444
+
+7. Point your test to "http://localhost:4444/wd/hub".

@@ -1,7 +1,6 @@
 package org.igt.config;
 
 import org.aeonbits.owner.Config;
-import org.aeonbits.owner.Config.Key;
 
 /**
  * Configuration interface to provide method name for InfluxDB related configuration keys.
