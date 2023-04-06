@@ -18,7 +18,7 @@ Appium (8.x version) is used to automate the mobile application for Android and 
 
 Remote and local execution are handled. Local execution can be executed using connected physical device or using emulators. For remote execution, framework has leveraged Browserstack and SauceLab execution.
 
---------------------------------------------------
+--------------------------------------------------.
 API automation:
 
 RestAssured is used for api automation. Local and remote can be executed using Docker image. Custom docker image is created to run the test for API automation. Authorization is handled for basic auth, Bearer token and OAuth 2.0.
