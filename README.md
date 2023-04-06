@@ -115,3 +115,5 @@ Jackson-databind: is used for serialization and deserialization in API test.
 No-exception: is used to declare the exception using functional programming way to remove the try/catch/exception code.
 
 WebDriverManager: is used for web driver management for web automation. 5.x version is also helped us to run the test directly inside docker container.
+
+Monte API : Screen recorder to record the video of test execution without using any external tool like Seleniod, WebDriverManager etc.
