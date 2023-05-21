@@ -3,7 +3,7 @@ This is master automation framework to automate Web, mobile, desktop and api app
 ![image](https://user-images.githubusercontent.com/70449523/228219095-3b8a9237-7e2b-4e46-b021-55cd5599206a.png)
 
 
-Web Automation:
+Web Automation:.
 
 Selenium (4.x version) is used to automate the web application along with TestNG for test framework. This is using POM based design and test are running using Docker custom image file. 
 
