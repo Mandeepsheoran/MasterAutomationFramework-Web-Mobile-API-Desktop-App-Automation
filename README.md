@@ -1,6 +1,6 @@
 This is master automation framework to automate Web, mobile, desktop and api application using Selenium, Appium, WinAppDriver, RestAssured along with Visual automation using Applitools Eyes and Percy.io, ZAP scan using OWASP ZAP, Accessibility testing using Axe-Core library, Monkey testing using Gremlins, live AI powered dashboard using ELK, Influxdb-Grafana, ReportPortal.io, ML based auto healing using Healenium etc. Docker is used to do the setup for all these tools and running automation test cases.
 
-
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/e7872836-6b27-4dc5-9b42-2ca1a9f0553e)
 
 
 Web Automation:.
