@@ -53,7 +53,7 @@ Accessibility testing:
 
 Axe-core library is used for accessibility testing. We have targeted web application for this testing. Axe-core is based on all WCAG rules specified under 1.0 and 2.0. We can see the reports for accessibility testing results after execution of respective test cases.
 
-![Uploading image.png…]()
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/12b4d160-efe4-449e-bc29-218a485e0a99)
 
 
 --------------------------------------------------
