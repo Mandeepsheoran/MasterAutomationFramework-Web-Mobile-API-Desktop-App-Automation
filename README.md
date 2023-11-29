@@ -58,6 +58,9 @@ Monkey Testing:
 
 Gremlins is used for monkey or ad hoc testing. This is one java script which we can inject in web application to test the application without any test cases. It used to have some components called mogwai which used to do click, sendkeys, select type of operations.
 
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/b49cf3ef-bcc4-4dcd-a4b4-eed13df6ab51)
+
+
 --------------------------------------------------
 Security Scan:
 
