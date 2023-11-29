@@ -33,6 +33,8 @@ Visual Automation:
 
 Applitools Eyes and Percy.io are used for visual automation. This is covered for both Web application as well as Mobile application. Classic runner which is free for use in Applitools Eyes is used in this framework. Although, Ultra Grid runner is also covered in framework from coding perspective but default configuration is set for Classic runner.
 
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/202da493-c341-4ce1-b44f-189103a8a674)
+
 Percy.io is another option provided for visual test automation. In real time project, we have to use of these two tools for visual comparison. Percy.io is pixel based image comparison meanwhile Applitools Eyes is having AI powered algoritham which emulates the human eye visualization.
 
 --------------------------------------------------
@@ -68,6 +70,8 @@ Gremlins is used for monkey or ad hoc testing. This is one java script which we 
 Security Scan:
 
 We are using OWASP ZAP to perform the security test as part of functional pipeline for web application. We are just using the passive scan of ZAP as part of automation and not full security scan so their is no chance of any impact on server. We used to call one proxy of ZAP from selenium/browser which used to handle this scan. OWASP ZAP also provide one colourful html report for test results.
+
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/8791cc15-6540-4b0b-9dd9-6fbf73213dc8)
 
 ----------------------------------------------------
 Auto healing:
