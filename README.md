@@ -2,6 +2,8 @@ This is master automation framework to automate Web, mobile, desktop and api app
 
 ![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/e7872836-6b27-4dc5-9b42-2ca1a9f0553e)
 
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/f5f94363-3878-4a86-be29-90caadfc7b7c)
+
 
 Web Automation:.
 
