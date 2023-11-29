@@ -41,10 +41,14 @@ Percy.io is another option provided for visual test automation. In real time pro
 Live execution dashboard:
 
 ReportPortal.io, Elastic-Kibana, Influxdb-Grafana are used for visualize the live execution. We can use any one of these three option in real project. We don't have to wait for the complete test execution to see the test results. We can also see the trend of test status which is not possible while using Extent and any other report. We can capture test results for all types of tests like Web, mobile, api and desktop application.
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/15d92254-153f-4c34-b370-f0728fe7bbe7)
+
 
 ReportPortal.io is AI/ML powered powerful dashboard to see test results and report analysis. kNN(k-nearest neighbour) ML algoritham is used to identify the reason of  failure for any test failure.
 
 Elastic-Kibana: is easy setup for dashboard where we can push the results in elastic database and then same can be visualize on Kibana in real time. 
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/50ff4b24-7e44-400a-8da0-a288fb7808c9)
+
 
 Influxdb-Grafana: is also similar setup like ELK. We can have same dashboard for performance as well as automation if we want to use this.
 
@@ -78,6 +82,8 @@ Auto healing:
 
 Healenium is used for auto locator healing for Web and mobile automation. Healenium is AI powered auto healing of locator using LCS (Longest common subsequence) algoritham to heal the failed locator based on percentage weightage. This will stable the whole pipeline execution for UI test cases.
 Docker-compose file is attached in project to do the setup.
+![image](https://github.com/Mandeepsheoran/MasterAutomationFramework-Web-Mobile-API-Desktop-App-Automation/assets/70449523/c756b326-b19e-4cb8-a27a-459bf209de10)
+
 
 ----------------------------------------------------
 Reporting:
